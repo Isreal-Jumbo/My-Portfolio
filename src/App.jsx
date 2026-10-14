@@ -71,7 +71,7 @@ const certifications = [
   }, */
 ];
 const contactLinks = [
-  { label: "Email", href: "mailto:isrealjumbo160@gmail.com" },
+  { label: "Email", href: "mailto:sequencewebdev@gmail.com" },
   { label: "WhatsApp", href: "https://wa.me/2348078878996" },
   { label: "GitHub", href: "https://github.com/Isreal-Jumbo" },
   {
