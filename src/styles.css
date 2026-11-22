@@ -289,46 +289,18 @@ button {
   width: 4px;
   height: 4px;
 }
-.art-cube {
+.hero-brand-image {
   position: absolute;
-  width: 205px;
-  height: 205px;
+  z-index: 1;
+  top: 50%;
   left: 50%;
-  top: 48%;
-  transform: translate(-50%, -50%) rotate(-30deg) skew(0deg, -2deg);
-  filter: drop-shadow(0 0 45px #3a65ff26);
-}
-.cube-face {
-  position: absolute;
-  inset: 0;
-  border: 1px solid #8fafff63;
-  background: linear-gradient(140deg, #718cf033, #23386847);
-  backdrop-filter: blur(1px);
-}
-.cube-top {
-  clip-path: polygon(50% 0, 100% 25%, 50% 51%, 0 25%);
-  background: linear-gradient(130deg, #b3cbff35, #5a80e82b);
-}
-.cube-left {
-  clip-path: polygon(0 25%, 50% 51%, 50% 100%, 0 75%);
-  background: linear-gradient(150deg, #617fcf51, #26375b4f);
-}
-.cube-right {
-  clip-path: polygon(50% 51%, 100% 25%, 100% 75%, 50% 100%);
-  background: linear-gradient(100deg, #3f5dab42, #7b9bff1d);
-}
-.cube-core {
-  position: absolute;
-  left: 33%;
-  top: 38%;
-  width: 34%;
-  height: 33%;
-  border: 1px solid #bdd1ff99;
-  transform: rotate(30deg);
-  background: radial-gradient(circle, #9db8ff58, #4468c822);
-  box-shadow:
-    inset 0 0 24px #8fafff3f,
-    0 0 25px #6f8fff2b;
+  width: auto;
+  height: min(88%, 430px);
+  max-width: 76%;
+  object-fit: contain;
+  transform: translate(-50%, -50%);
+  border: 1px solid #aabfff36;
+  box-shadow: 0 24px 80px #0008;
 }
 .art-label {
   position: absolute;

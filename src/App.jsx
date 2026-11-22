@@ -207,12 +207,11 @@ function App() {
             <div className="art-orbit orbit-two" />
             <div className="art-orbit orbit-three" />
             <div className="art-grid" />
-            <div className="art-cube">
-              <div className="cube-face cube-top" />
-              <div className="cube-face cube-left" />
-              <div className="cube-face cube-right" />
-              <div className="cube-core" />
-            </div>
+            <img
+              className="hero-brand-image"
+              src="/sequence-brand.jpg"
+              alt="Sequence brand portrait and wordmark"
+            />
             <span className="art-label art-label-top">
               FIG. 01 <span>—</span> BUILD WITH INTENT
             </span>
