@@ -458,6 +458,14 @@ button {
 .credential small {
   display: block;
 }
+.credential a {
+  color: inherit;
+  text-decoration: none;
+}
+.credential a:hover strong,
+.credential a:focus-visible strong {
+  color: #c4b5fd;
+}
 .credential strong {
   font-size: 12px;
   font-weight: 600;
@@ -1010,6 +1018,16 @@ button {
   padding: 23px;
   border: 1px solid #222a38;
   background: linear-gradient(145deg, #0d121d, #090c13);
+}
+.certificate-card a {
+  display: block;
+  height: 100%;
+  color: inherit;
+  text-decoration: none;
+}
+.certificate-card:hover,
+.certificate-card:focus-within {
+  border-color: #5c6bb0;
 }
 .certificate-issuer {
   color: #c4b5fd;

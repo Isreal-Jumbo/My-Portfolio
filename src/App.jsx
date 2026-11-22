@@ -40,14 +40,12 @@ const Icon = ({ name, size = 18 }) => {
 const skills = [
   { name: "JavaScript", area: "Language" },
   { name: "TypeScript", area: "Language" },
+  { name: "SQL", area: "Language" },
   { name: "React", area: "Frontend" },
-  { name: "HTML", area: "Frontend" },
-  { name: "CSS", area: "Frontend" },
-  { name: "Responsive web design", area: "Frontend" },
-  { name: "Tailwind CSS", area: "Familiar" },
+  { name: "HTML, CSS and responsive design", area: "Frontend" },
   { name: "Node.js", area: "Backend" },
   { name: "REST API endpoints", area: "Backend" },
-  { name: "Frontend and backend development", area: "Full stack" },
+  { name: "PostgreSQL and Supabase", area: "Database" },
   { name: "Git", area: "Workflow" },
   { name: "GitHub", area: "Workflow" },
   { name: "Cloudinary photo uploads", area: "Integration" },
@@ -57,12 +55,14 @@ const certifications = [
   {
     name: "Responsive Web Design",
     issuer: "freeCodeCamp",
-    status: "Completed",
+    status: "View certificate",
+    href: "https://freecodecamp.org/certification/fcc-isreal-jumbo/responsive-web-design-v9",
   },
   {
-    name: "Full-stack Software Development",
+    name: "Software Development",
     issuer: "TS Academy",
-    status: "Completed",
+    status: "Certified November 11, 2026 · View certificate",
+    href: "/certificates/ts-academy-software-development.pdf",
   },
   /* {
     name: "JavaScript",
@@ -261,25 +261,29 @@ function App() {
             </div>
             <div className="about-detail">
               <p>
-                I completed the full-stack software development program at TS
-                Academy, building a foundation across frontend and backend
-                development with JavaScript, TypeScript, React and Node.js.
+                I build practical web applications that help people and small
+                businesses handle real needs, from polished customer experiences
+                to working booking and admin tools.
               </p>
               <p>
-                My capstone was Mingle, a team-built social media mini app
-                deployed publicly. I contributed across the product, from upload
-                flows and API endpoints to profile and post experiences.
+                Working across the frontend and backend has made me eager to keep
+                learning, take on new challenges, and solve more problems with
+                code.
               </p>
               <div className="credential">
                 <span className="credential-icon">
                   <Icon name="check" size={17} />
                 </span>
-                <span>
+                <a
+                  href="/certificates/ts-academy-software-development.pdf"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <strong>TS Academy</strong>
                   <small>
-                    Full-stack Software Development · Certificate pending
+                    Software Development · Certified November 11, 2026
                   </small>
-                </span>
+                </a>
               </div>
             </div>
           </div>
@@ -578,9 +582,11 @@ function App() {
           <div className="certificate-grid">
             {certifications.map((certificate) => (
               <article className="certificate-card" key={certificate.name}>
-                <span className="certificate-issuer">{certificate.issuer}</span>
-                <h3>{certificate.name}</h3>
-                <p>{certificate.status}</p>
+                <a href={certificate.href} target="_blank" rel="noreferrer">
+                  <span className="certificate-issuer">{certificate.issuer}</span>
+                  <h3>{certificate.name}</h3>
+                  <p>{certificate.status}</p>
+                </a>
               </article>
             ))}
           </div>
