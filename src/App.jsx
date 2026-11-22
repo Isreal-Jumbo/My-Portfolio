@@ -126,9 +126,7 @@ function App() {
     <>
       <header className="topbar">
         <a className="brand" href="#home" aria-label="Sequence home">
-          <span className="brand-mark">
-            S<span>.</span>
-          </span>
+          <span className="brand-mark" aria-hidden="true" />
           <span className="brand-name">SEQUENCE</span>
         </a>
         <button
@@ -201,7 +199,7 @@ function App() {
           </div>
           <div
             className="hero-art"
-            aria-label="Abstract blue architectural illustration"
+            aria-label="Sequence brand artwork with violet lighting"
           >
             <div className="art-orbit orbit-one" />
             <div className="art-orbit orbit-two" />
@@ -215,7 +213,9 @@ function App() {
             <span className="art-label art-label-top">
               FIG. 01 <span>—</span> BUILD WITH INTENT
             </span>
-            <span className="art-label art-label-bottom">SEQUENCE / 2026</span>
+            <span className="art-label art-label-bottom">
+              SEQUENCE / FULL-STACK
+            </span>
             <div className="art-coordinate">
               06° 27' N<br />
               03° 23' E
@@ -277,8 +277,7 @@ function App() {
                 <span>
                   <strong>TS Academy</strong>
                   <small>
-                    Full-stack Software Development · Certificate expected by
-                    end of October 2026
+                    Full-stack Software Development · Certificate pending
                   </small>
                 </span>
               </div>
@@ -624,17 +623,15 @@ function App() {
         </section>
       </main>
       <footer className="footer section-wrap">
-        <a className="brand" href="#home">
-          <span className="brand-mark">
-            S<span>.</span>
-          </span>
+        <a className="brand" href="#home" aria-label="Sequence home">
+          <span className="brand-mark" aria-hidden="true" />
           <span className="brand-name">SEQUENCE</span>
         </a>
         <span>DESIGNED & BUILT BY ISREAL JUMBO</span>
         <a href="#home" className="back-top">
           BACK TO TOP ↑
         </a>
-        <small>© 2026 SEQUENCE</small>
+        <small>© SEQUENCE</small>
       </footer>
     </>
   );
