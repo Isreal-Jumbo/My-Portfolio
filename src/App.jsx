@@ -182,7 +182,7 @@ function App() {
               Logic into <span className="serif-word">impact.</span>
             </h1>
             <p className="hero-lede">
-              I'm Isreal Jumbo,  I build considered web experiences from the
+              I'm Isreal Jumbo, I build considered web experiences from the
               first component to the last endpoint.
             </p>
             <div className="hero-actions">
@@ -296,7 +296,7 @@ function App() {
                 <br />
                 <span className="muted-heading">way people work.</span>
               </h2>
-              <p>Team-built capstone work and selected code repositories.</p>
+              <p>Client and team projects, plus selected code repositories.</p>
             </div>
             <article className="featured-project">
               <div className="project-visual">
@@ -400,6 +400,106 @@ function App() {
                     rel="noreferrer"
                   >
                     Team repository <Icon name="arrow" size={15} />
+                  </a>
+                </div>
+              </div>
+            </article>
+            <article className="featured-project nails-project">
+              <div className="project-visual nails-visual">
+                <div className="visual-topline">
+                  <span>NAILS BY GIFT / BOOKING</span>
+                  <span>CLIENT PROJECT</span>
+                </div>
+                <div className="nails-preview">
+                  <div className="nails-preview-nav">
+                    <span className="nails-mark">G</span>
+                    <span>NAILS BY GIFT</span>
+                    <span className="nails-preview-link">
+                      BOOK ON WHATSAPP ↗
+                    </span>
+                  </div>
+                  <div className="nails-preview-body">
+                    <span className="nails-preview-kicker">
+                      CUSTOM NAIL ART · LAGOS
+                    </span>
+                    <strong>
+                      Your nails,
+                      <br />
+                      <em>your kind of beautiful.</em>
+                    </strong>
+                    <div className="nails-preview-bottom">
+                      <span>
+                        Choose a service and an open appointment time.
+                      </span>
+                      <span className="nails-preview-date">
+                        10:00&nbsp; AM&nbsp; ·&nbsp; 1:00&nbsp; PM&nbsp; ·&nbsp;
+                        4:00&nbsp; PM
+                      </span>
+                    </div>
+                  </div>
+                  <div className="nails-preview-footer">
+                    APPOINTMENT REQUESTS CONFIRMED WITH GIFT ON WHATSAPP
+                  </div>
+                </div>
+                <div className="visual-caption">
+                  <span>Booking experience preview</span>
+                  <span>VIEW LIVE ↗</span>
+                </div>
+              </div>
+              <div className="project-content">
+                <div className="project-overline">
+                  <span className="project-number">02</span>
+                  <span className="pill">CLIENT PROJECT</span>
+                </div>
+                <h3>
+                  Nails By Gift<span className="project-period">/</span>
+                </h3>
+                <p className="project-description">
+                  A WhatsApp-first appointment booking website for a Lagos nail
+                  tech brand. Customers can explore the gallery, choose a
+                  service, date, and available time, then send a request to Gift
+                  on WhatsApp for confirmation.
+                </p>
+                <div className="stack-tags">
+                  <span>React</span>
+                  <span>Vite</span>
+                  <span>Supabase</span>
+                  <span>Postgres</span>
+                  <span>Vercel</span>
+                </div>
+                <div className="contribution-title">PROJECT FEATURES</div>
+                <ul className="contributions">
+                  <li>
+                    <Icon name="check" size={15} />
+                    Live availability based on confirmed appointments
+                  </li>
+                  <li>
+                    <Icon name="check" size={15} />
+                    Owner dashboard for appointments and deposits
+                  </li>
+                  <li>
+                    <Icon name="check" size={15} />
+                    Blocked dates and date-specific time controls
+                  </li>
+                  <li>
+                    <Icon name="check" size={15} />
+                    WhatsApp booking requests and design enquiries
+                  </li>
+                </ul>
+                <div className="project-links">
+                  <a
+                    href="https://nails-by-gift-booking.vercel.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    View live site <Icon name="arrow" size={15} />
+                  </a>
+                  <a
+                    href="https://github.com/Isreal-Jumbo/nails-by-gift-booking"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    GitHub repository <Icon name="arrow" size={15} />
                   </a>
                 </div>
               </div>

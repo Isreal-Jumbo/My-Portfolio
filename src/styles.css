@@ -520,6 +520,119 @@ button {
   flex-direction: column;
   justify-content: space-between;
 }
+.nails-project {
+  margin-top: 24px;
+}
+.nails-visual {
+  background: radial-gradient(
+    ellipse at 55% 42%,
+    #7d4a56 0%,
+    #392126 48%,
+    #171013 100%
+  );
+}
+.nails-visual:before {
+  opacity: 0.12;
+  background-image:
+    linear-gradient(#f0d7cc 1px, transparent 1px),
+    linear-gradient(90deg, #f0d7cc 1px, transparent 1px);
+}
+.nails-visual .visual-topline,
+.nails-visual .visual-caption {
+  color: #f0c3b8;
+}
+.nails-preview {
+  position: relative;
+  z-index: 1;
+  width: min(92%, 490px);
+  margin: auto;
+  overflow: hidden;
+  color: #221516;
+  background: #efe4d9;
+  border: 1px solid #f4d8cd88;
+  box-shadow: 0 24px 70px #08050799;
+  transform: perspective(900px) rotateY(3deg) rotateX(1deg);
+}
+.nails-preview-nav,
+.nails-preview-footer {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 11px 13px;
+  border-bottom: 1px solid #d8c8bd;
+  font-size: 7px;
+  letter-spacing: 0.14em;
+}
+.nails-mark {
+  display: grid;
+  width: 21px;
+  height: 21px;
+  place-items: center;
+  color: #f8eee7;
+  background: #702f43;
+  border-radius: 50%;
+  font:
+    13px Georgia,
+    serif;
+}
+.nails-preview-link {
+  margin-left: auto;
+  padding: 7px 8px;
+  color: #fff8f1;
+  background: #211719;
+  font-size: 6px;
+  letter-spacing: 0.08em;
+}
+.nails-preview-body {
+  display: grid;
+  min-height: 310px;
+  align-content: center;
+  gap: 16px;
+  padding: 28px 8%;
+  background:
+    linear-gradient(90deg, #f0e5dbf5 0%, #f0e5dbd9 48%, #f0e5db44 100%),
+    radial-gradient(ellipse at 78% 48%, #d49c91 0%, #a76c67 34%, #50383b 70%);
+}
+.nails-preview-kicker {
+  color: #8b4a58;
+  font-size: 7px;
+  letter-spacing: 0.17em;
+}
+.nails-preview-body strong {
+  display: grid;
+  color: #241819;
+  font:
+    44px/0.98 Georgia,
+    serif;
+  letter-spacing: -0.06em;
+}
+.nails-preview-body em {
+  color: #843c51;
+  font-weight: 400;
+}
+.nails-preview-bottom {
+  display: grid;
+  gap: 12px;
+  max-width: 260px;
+  color: #6c5955;
+  font-size: 8px;
+  line-height: 1.6;
+}
+.nails-preview-date {
+  padding: 8px 9px;
+  border: 1px solid #c7aaa0;
+  color: #58323b;
+  font: 7px var(--mono);
+  text-align: center;
+}
+.nails-preview-footer {
+  justify-content: center;
+  border-top: 1px solid #d8c8bd;
+  border-bottom: 0;
+  color: #805d59;
+  font-size: 6px;
+  text-align: center;
+}
 .project-visual:before {
   content: "";
   position: absolute;
@@ -1014,7 +1127,9 @@ button {
   border: 1px solid #283247;
   color: #c5cede;
   font-size: 11px;
-  transition: border-color 180ms ease, color 180ms ease;
+  transition:
+    border-color 180ms ease,
+    color 180ms ease;
 }
 .contact-links a:hover {
   border-color: #658bff;
